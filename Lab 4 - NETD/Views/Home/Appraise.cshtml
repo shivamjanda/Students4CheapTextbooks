@@ -1,0 +1,67 @@
+﻿<!--
+ Name: Shivam Janda
+ Date: November 21, 2022
+ Description: Appraise webpage
+-->
+@{
+    ViewData["Title"] = "Appraise";
+}
+
+<!-- Linking the css design sheet (site.css)-->
+<head>
+    <link rel="stylesheet" href="~/css/site.css" type="text/css" />
+</head>
+
+<!-- Home button that links to the index (home page)-->
+<a href="~/Home/Index">
+    <button>Home</button>
+</a>
+<!-- Appraise button that links to the appraise page-->
+<a href="~/Home/Appraise">
+    <button>Appraise</button>
+</a>
+<!-- Appraise button that links to the View Appraisals page-->
+<a href="~/Home/ViewApprasials">
+    <button>View Appraisals</button>
+</a>
+
+
+<div>
+    <h1 class="display">Student4CheapTexts</h1>
+    <br /> <!-- break (indent line)-->
+    <form action="~/Home/Appraise" method="POST">
+        <!-- when submit is pressed -->
+        <label style="margin-left: 500px" for="title">Textbook Title:</label> <!-- label for title -->
+        <br />
+        <input style="margin-left: 500px" type="text" id="title" name="title" placeholder=""> <!-- input for title -->
+        <br />
+        <br />
+        <label style="margin-left: 500px" for="isbn">Textbook ISBN:</label><!-- label for ISBN -->
+        <br />
+        <input style="margin-left: 500px" type="text" id="isbn" name="isbn" placeholder=""><!-- input box for isbn -->
+        <br />
+        <br />
+        <label style="margin-left: 500px" for="version">Textbook Version:</label><!-- label for Textbook version -->
+        <br />
+        <input style="margin-left: 500px" type="text" id="version" name="version" placeholder=""><!-- label for Textbook version -->
+        <br />
+        <br />
+        <label style="margin-left: 500px" for="price">Original Purchase Price:</label><!-- label for orignal price -->
+        <br />
+        <input style="margin-left: 500px" type="text" id="price" name="price" placeholder=""><!-- input for orignal price -->
+        <br />
+        <br />
+        <label style="margin-left: 500px" for="condition">Condition:</label><!-- label for condition -->
+        <br />
+        <select style="margin-left: 500px" id="condition" name="condition">
+            <!--selectbox for condtions-->
+            <option>New</option>
+            <option>Good</option>
+            <option>Bad</option>
+        </select>
+        <br />
+        <br />
+        <button class="btn-primary" style="margin-left: 500px" name="submit" type="submit">Appraise</button> <!-- submit button-->
+    </form>
+</div>
+

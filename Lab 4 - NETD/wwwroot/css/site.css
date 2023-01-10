@@ -1,0 +1,16 @@
+﻿body{
+    background-color: lightgray;
+}
+
+p.intro {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1.display {
+    background-color: #484848;
+}
+
+button {
+    background-color: navajowhite;
+}
